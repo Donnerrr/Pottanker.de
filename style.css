@@ -114,11 +114,21 @@ body{
     justify-content: center;
 }
 
+
+
+
 .kachel-bild-box img{
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
+
+
+#bild-box-links{
+    width: 200;
+    height: auto;
+}
+
 
 .kachel-text-box{
     width: 65%;
@@ -151,4 +161,9 @@ body{
     font-size: 12px;
     font-weight: bold;
 
+}
+
+.icon{
+    width: 5px;
+    height: auto;
 }
