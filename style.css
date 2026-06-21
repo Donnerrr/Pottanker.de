@@ -10,7 +10,6 @@ body{
     position: 100%;
     height: 720px;
     align-items: center;
-    outline: 2px solid #ff00ff;
 }
 
 #title_bg{
@@ -73,7 +72,6 @@ body{
 }
 
 #Kachel_Container{
-    outline: 2px solid #ff00ff;
     display: flex;
     justify-content: space-between;
 
@@ -98,12 +96,29 @@ body{
     padding: 15px;
     box-sizing: border-box;
     text-decoration: none;
-    transition: transform 0.2s ease, background 0.2 ease;
+    transition: all 0.3s ease;
 }
 
 .Kachel:hover{
     transform: scale(1.02);
     background: rgba(13, 27, 42, 0.85);
+}
+
+.kachel-apps:hover {
+    /* 1. Schatten: Enger, heller Kern | 2. Schatten: Breites, weiches Auslaufen */
+    box-shadow: 0 0 15px 2px rgba(0, 230, 255, 0.9), 
+                0 0 40px 8px rgba(0, 180, 216, 0.5); 
+    border-color: rgba(0, 230, 255, 0.8);
+}
+
+/* --- Spezifischer Neon-Glow für die Fotografie Kachel (Warmes Gold) --- */
+.kachel-fotografie:hover {
+    /* 1. Schatten: Enger, hellgelber Kern | 2. Schatten: Breites, goldenes Auslaufen */
+    box-shadow: 0 0 15px 2px rgba(255, 246, 213, 0.9), 
+                0 0 40px 8px rgba(243, 237, 146, 0.5); 
+    
+    /* Der Rand leuchtet im helleren Gold-Ton auf */
+    border-color: rgba(255, 246, 213, 0.8);
 }
 
 .kachel-bild-box{
